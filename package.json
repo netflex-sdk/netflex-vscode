@@ -1,0 +1,31 @@
+{
+  "name": "netflex-vscode",
+  "displayName": "NetflexSDK Extension",
+  "publisher": "apility",
+  "version": "2.0.0",
+  "engines": {
+    "vscode": "^1.22.0"
+  },
+  "description": "VSCode extension for NetflexSDK",
+  "categories": ["Snippets"],
+  "homepage": "https://github.com/netflex-sdk/netflex-vscode/blob/master/README.md",
+  "bugs": {
+    "url": "https://github.com/netflex-sdk/netflex-vscode/issues",
+    "email": "thomas@apility.no"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/netflex-sdk/netflex-vscode"
+  },
+  "icon": "icon.png",
+  "contributes": {
+    "snippets": [
+      {
+        "language": "blade",
+        "path": "./src/blade.json"
+      }
+    ]
+  },
+  "author": "Thomas Alrek <thomas@apility.no>",
+  "license": "MIT"
+}

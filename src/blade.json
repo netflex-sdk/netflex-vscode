@@ -1,0 +1,87 @@
+{
+  "content": {
+    "prefix": [
+      "@content"
+    ],
+    "body": [
+      "@content(${1:'area'})"
+    ],
+    "description": "Retrieves the Content Area"
+  },
+  "mode": {
+    "prefix": [
+      "@mode"
+    ],
+    "body": [
+      "@mode('${1|live,preview,edit|}')",
+      "\t$0",
+      "@endmode"
+    ],
+    "description": "Conditional block based on current_mode"
+  },
+  "inline": {
+    "prefix": [
+      "<x-inline>"
+    ],
+    "body": [
+      "<x-inline area=\"${1:area}\" is=\"${2|div,p,h1,h2,h3|}\" />"
+    ],
+    "description": "Inline HTML Editor"
+  },
+  "image": {
+    "prefix": [
+      "<x-image src>"
+    ],
+    "body": [
+      "<x-image :src=\"${1:\\$src}\" mode=\"${2|rc,o,e,p,l,a,c,fill|}\" size=\"${3:256}x${4:256}\" />"
+    ],
+    "description": "Image Field (CDN)"
+  },
+  "image-inline": {
+    "prefix": [
+      "<x-image area>"
+    ],
+    "body": [
+      "<x-image area=\"${1:area}\" mode=\"${2|rc,o,e,p,l,a,c,fill|}\" size=\"${3:256}x${4:256}\" />"
+    ],
+    "description": "Inline Image Field"
+  },
+  "seo": {
+    "prefix": [
+      "<x-seo>"
+    ],
+    "body": [
+      "<x-seo />"
+    ],
+    "description": "SEO Meta Tags"
+  },
+  "editor-button": {
+    "prefix": [
+      "<x-editor-button>"
+    ],
+    "body": [
+      "<x-editor-button area=\"${1:area}\" type=\"${2|checkbox,checkbox-group,color,contentlist,contentlist_advanced,datetime,editor_large,editor_small,entries,file,gallery,image,integer,link,multiselect,nav,select,tags,text,textarea|}\">",
+      "\t${0:Button Label}",
+      "</x-editor-button>"
+    ],
+    "description": "Editor Button"
+  },
+  "editor-tools": {
+    "prefix": [
+      "<x-editor-tools>"
+    ],
+    "body": [
+      "<x-editor-tools />"
+    ],
+    "description": "Editor Tools"
+  },
+  "blocks": {
+    "prefix": [
+      "<x-blocks>"
+    ],
+    "body": [
+      "<x-blocks area=\"${0:sections}\" />"
+    ],
+    "description": "Block Builder"
+  }
+}
