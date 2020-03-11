@@ -46,6 +46,24 @@
     ],
     "description": "Inline Image Field"
   },
+  "picture": {
+    "prefix": [
+      "<x-picture src>"
+    ],
+    "body": [
+      "<x-picture :src=\"${1:\\$src}\" mode=\"${2|e,o,rc,p,l,a,c,fill|}\" width=\"${3:256}\" width=\"${4:256}\" />"
+    ],
+    "description": "Picture Field (CDN)"
+  },
+  "picture-inline": {
+    "prefix": [
+      "<x-picture area>"
+    ],
+    "body": [
+      "<x-picture area=\"${1:area}\" mode=\"${2|e,o,rc,p,l,a,c,fill|}\" width=\"${3:256}\" width=\"${4:256}\" />"
+    ],
+    "description": "Inline Picture Field"
+  },
   "seo": {
     "prefix": [
       "<x-seo>"
