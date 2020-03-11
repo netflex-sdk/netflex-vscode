@@ -83,5 +83,14 @@
       "<x-blocks area=\"${0:sections}\" />"
     ],
     "description": "Block Builder"
+  },
+  "static-content": {
+    "prefix": [
+      "<x-static-content>"
+    ],
+    "body": [
+      "<x-static-content area=\"${1:area}\" />"
+    ],
+    "description": "Static Content"
   }
 }
