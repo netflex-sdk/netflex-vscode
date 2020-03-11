@@ -1,5 +1,5 @@
 {
-  "content": {
+  "content-directive": {
     "prefix": [
       "@content"
     ],
@@ -110,5 +110,14 @@
       "<x-static-content area=\"${1:area}\" />"
     ],
     "description": "Static Content"
+  },
+  "content": {
+    "prefix": [
+      "<x-content>"
+    ],
+    "body": [
+      "<x-content area=\"${1:area}\" />"
+    ],
+    "description": "Content Area"
   }
 }
