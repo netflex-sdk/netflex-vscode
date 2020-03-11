@@ -33,7 +33,7 @@
       "<x-image src>"
     ],
     "body": [
-      "<x-image :src=\"${1:\\$src}\" mode=\"${2|rc,o,e,p,l,a,c,fill|}\" size=\"${3:256}x${4:256}\" />"
+      "<x-image :src=\"${1:\\$src}\" mode=\"${2|e,o,rc,p,l,a,c,fill|}\" width=\"${3:256}\" width=\"${4:256}\" />"
     ],
     "description": "Image Field (CDN)"
   },
@@ -42,7 +42,7 @@
       "<x-image area>"
     ],
     "body": [
-      "<x-image area=\"${1:area}\" mode=\"${2|rc,o,e,p,l,a,c,fill|}\" size=\"${3:256}x${4:256}\" />"
+      "<x-image area=\"${1:area}\" mode=\"${2|e,o,rc,p,l,a,c,fill|}\" width=\"${3:256}\" width=\"${4:256}\" />"
     ],
     "description": "Inline Image Field"
   },
