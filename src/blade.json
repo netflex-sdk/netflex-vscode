@@ -42,16 +42,25 @@
       "<x-image area>"
     ],
     "body": [
-      "<x-image area=\"${1:area}\" mode=\"${2|e,o,rc,p,l,a,c,fill|}\" width=\"${3:256}\" width=\"${4:256}\" />"
+      "<x-image area=\"${1:area}\" mode=\"${2|e,o,rc,p,l,a,c,fill|}\" width=\"${3:256}\" height=\"${4:256}\" />"
     ],
     "description": "Inline Image Field"
+  },
+  "background-image": {
+    "prefix": [
+      "<x-background-image>"
+    ],
+    "body": [
+      "<x-background-image src=\"{1:\\$src}\" id=\"${2:id}\" class=\"${3:class}\" mode=\"${4|e,o,rc,p,l,a,c,fill|}\" width=\"${5:256}\" height=\"${6:256}\" />"
+    ],
+    "description": "Background Image"
   },
   "picture": {
     "prefix": [
       "<x-picture src>"
     ],
     "body": [
-      "<x-picture :src=\"${1:\\$src}\" mode=\"${2|e,o,rc,p,l,a,c,fill|}\" width=\"${3:256}\" width=\"${4:256}\" />"
+      "<x-picture src=\"{1:\\$src}\" mode=\"${2|e,o,rc,p,l,a,c,fill|}\" width=\"${3:256}\" width=\"${4:256}\" />"
     ],
     "description": "Picture Field (CDN)"
   },
