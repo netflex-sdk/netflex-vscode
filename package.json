@@ -2,12 +2,14 @@
   "name": "netflex-vscode",
   "displayName": "NetflexSDK Extension",
   "publisher": "apility",
-  "version": "2.0.5",
+  "version": "2.0.6",
   "engines": {
     "vscode": "^1.22.0"
   },
   "description": "VSCode extension for NetflexSDK",
-  "categories": ["Snippets"],
+  "categories": [
+    "Snippets"
+  ],
   "homepage": "https://github.com/netflex-sdk/netflex-vscode/blob/master/README.md",
   "bugs": {
     "url": "https://github.com/netflex-sdk/netflex-vscode/issues",
