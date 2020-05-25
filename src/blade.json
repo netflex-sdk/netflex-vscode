@@ -102,12 +102,21 @@
     ],
     "description": "Editor Tools"
   },
+  "component": {
+    "prefix": [
+      "<x-component>"
+    ],
+    "body": [
+      "<x-component is=\"${1:name}\" />"
+    ],
+    "description": "Dynamic component"
+  },
   "blocks": {
     "prefix": [
       "<x-blocks>"
     ],
     "body": [
-      "<x-blocks area=\"${0:sections}\" />"
+      "<x-blocks area=\"${1:sections}\" :variables=\"${2:[]}\" />"
     ],
     "description": "Block Builder"
   },
